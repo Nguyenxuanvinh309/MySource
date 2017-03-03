@@ -1,0 +1,47 @@
+@import "../helpers/variables.scss";
+
+.panel{
+	border: $border-main;
+	border-radius: $border-radius-main;
+	transition: box-shadow $transition-main;
+}
+
+.panel:hover{
+	box-shadow: $box-shadow-main;
+}
+
+.panel-footer .btn:hover{
+	border: $border-main;
+	background-color: $background-panel-color;
+	color: $main-color!important;
+}
+
+.panel-heading{
+	color: $background-panel-color;
+	background-color: $main-color !important;
+	padding: $padding-main;
+	border-bottom: $border-main-size solid transparent;
+	border-top-left-radius: $border-radius-main;
+	border-top-right-radius: $border-radius-main;
+	border-bottom-left-radius: $border-radius-main;
+	border-bottom-right-radius: $border-radius-main;
+}
+
+.panel-footer{
+	background-color: $background-panel-color;
+}
+
+.panel-footer h3{
+	font-size: $size-panel-footer-h3;
+}
+
+.panel-footer h4{
+	color: $text-panel-footer-color;
+	font-size: $size-panel-footer-h4;
+}
+
+.panel-footer .btn{
+	margin: $margin-panel-button;
+	background-color: $main-color;
+	color: $background-panel-color;
+}

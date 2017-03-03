@@ -1,0 +1,7 @@
+@import "../helpers/variables.scss";
+
+footer .glyphicon{
+	font-size: $size-footer-icon;
+	margin-bottom: $margin-footer-icon-bottom;
+	color: $main-color;
+}

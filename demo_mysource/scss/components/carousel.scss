@@ -1,0 +1,26 @@
+@import "../helpers/variables.scss";
+
+.carousel-control.right, .carousel-control.left{
+	background-image: none;
+	color: $main-color;
+}
+
+.carousel-indicators li{
+	border-color: $main-color;
+}
+
+.carousel-indicators li.active{
+	background-color: $main-color;
+}
+
+.item h4{
+	font-size: $size-carousel-title;
+	line-height: $line-height-main;
+	font-weight: $font-weight-normal-title;
+	font-style: $font-style-carousel-title;
+	margin: $margin-carousel-title-x $margin-carousel-title-y;
+}
+
+.item h4 span{
+	font-style: $font-style-carousel-normal;
+}

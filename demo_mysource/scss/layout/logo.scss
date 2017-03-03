@@ -1,0 +1,11 @@
+@import "../helpers/variables.scss";
+
+.logo-image{
+	font-size: $size-logo-image;
+	color: $main-color;
+}
+
+.logo-image-small{
+	font-size: $size-logo-small-image;
+	color: $main-color;
+}

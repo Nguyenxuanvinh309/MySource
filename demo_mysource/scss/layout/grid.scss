@@ -1,0 +1,13 @@
+@import "../helpers/variables.scss";
+
+.thumbnail{
+	padding: 0 0 $padding-thumbnail-bottom 0;
+	border: none;
+	border-radius: $border-radius-main;
+}
+
+.thumbnail img{
+	width: $max-width;
+	height: $max-height;
+	margin-bottom: $margin-thumbnail-image-bottom;
+}

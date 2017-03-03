@@ -1,0 +1,12 @@
+@import "../helpers/variables.scss";
+
+.jumbotron{
+	background-color: $main-color;
+	color: $text-main-color;
+	padding: $padding-jumbotron-x $padding-jumbotron-y;
+}
+
+.header-area-search{
+	max-width: $max-width-header;
+	margin: auto;
+}
