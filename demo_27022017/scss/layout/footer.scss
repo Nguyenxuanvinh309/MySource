@@ -1,0 +1,16 @@
+@import "../helpers/variables.scss";
+
+footer{
+	background-color: #2d2d30;
+	color: $footer-text-color;
+	padding: $footer-padding;
+}
+
+footer a{
+	color: $footer-text-color;
+}
+
+footer a:hover{
+	color: $footer-hover-color;
+	text-decoration: none;
+}

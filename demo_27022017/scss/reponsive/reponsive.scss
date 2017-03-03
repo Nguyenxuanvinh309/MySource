@@ -1,0 +1,12 @@
+@media (max-width: 767px){
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 600px){
+	.carousel-caption{
+		display: none;
+	}
+}

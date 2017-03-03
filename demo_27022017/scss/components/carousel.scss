@@ -1,0 +1,12 @@
+@import "../helpers/variables.scss";
+
+.carousel-inner img {
+	-webkit-filter: grayscale($content-grayscale-color);
+	filter: grayscale($content-grayscale-color); //make all photos black and white
+    width: $max-width; //Set width to 100%
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
