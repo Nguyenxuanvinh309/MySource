@@ -1,0 +1,34 @@
+.image-area{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.image-area > img{
+  width: 100%;
+}
+.image--area-shara{
+  background: url(../img/photo-sahara-p.jpg) no-repeat;
+  background-position-x: 0px;
+  background-position-y: -45px;
+  background-size: cover;
+}
+.image--area-left{
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.image-row-1 .img-1{
+  width: 100%;
+}
+.image-row-1 div.img-1{
+  width: 100%;
+  height: 100%;
+}
+.img-1.img-1-hidden{
+  width: 50%;
+  opacity: 0;
+}
+
+.image-row-2 > img, .image--row--2-top > img, 
+.image--row--2-left > img, .image--row--2-right > img{
+  width: 100%;
+}
