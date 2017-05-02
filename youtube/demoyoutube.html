@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .main-menu{
+        width: 100%;
+        height: 400px;
+      }
+      .sub--menu-item > img{
+        width: 100%;
+      }
+
+      .sub-menu{
+        position: relative;
+        margin-bottom: 24px;
+      }
+
+      .sub-area{
+        margin-top: 24px;
+      }
+
+      .sub-menu:hover .sub--menu-item > img{
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 0.7s;
+        -o-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -ms-transition: 0.7s;
+        -webkit-transition: 0.7s;
+      }
+
+      .sub--menu-item{
+        position: relative;
+      }
+
+      .sub-menu:hover .sub--menu-item .fill{
+        position: absolute;
+        display: block;
+        margin: auto;
+        fill: #f6f6f6;
+      } 
+      .fill{
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        fill: #ffffff;
+        width: 100%;
+        height: 35%;
+        top: calc(100% - 68%);
+      }
+    </style>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+      <defs>
+        <g id="icon-phone">
+          <path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30   c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15   C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"></path>
+          <path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30   S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"></path>
+        </g>
+      </defs>
+    </svg>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+            <div id="player" class="main-menu"></div>
+        </div>
+      </div>
+      <div class="row sub-area">
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/hBMp6PQSuYM/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/BGqwZuBoGoY/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/P_bDPPK31i4/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/u6_GLGRi54Y/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/YkLz2O7cDng/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/FmJD0_jTOD4/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/zMJL3MMieMw/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 sub-menu">
+          <div class="sub--menu-item">
+            <img src="http://img.youtube.com/vi/-nnWBhKZeg0/0.jpg">
+            <svg viewBox="0 0 60 60" class="fill">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
