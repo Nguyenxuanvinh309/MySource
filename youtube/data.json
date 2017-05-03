@@ -1,34 +1,42 @@
 [
   {
     "id": 0,
-    "videoID": "hBMp6PQSuYM"
+    "videoID": "hBMp6PQSuYM",
+    "imageURL": "http://img.youtube.com/vi/hBMp6PQSuYM/0.jpg"
   },
   {
     "id": 1,
-    "videoID": "BGqwZuBoGoY"
+    "videoID": "BGqwZuBoGoY",
+    "imageURL": "http://img.youtube.com/vi/BGqwZuBoGoY/0.jpg"
   },
   {
     "id": 2,
-    "videoID": "P_bDPPK31i4"
+    "videoID": "P_bDPPK31i4",
+    "imageURL": "http://img.youtube.com/vi/P_bDPPK31i4/0.jpg"
   },
   {
     "id": 3,
-    "videoID": "u6_GLGRi54Y"
+    "videoID": "u6_GLGRi54Y",
+    "imageURL": "http://img.youtube.com/vi/u6_GLGRi54Y/0.jpg"
   },
   {
     "id": 4,
-    "videoID": "YkLz2O7cDng"
+    "videoID": "YkLz2O7cDng",
+    "imageURL": "http://img.youtube.com/vi/YkLz2O7cDng/0.jpg"
   },
   {
     "id": 5,
-    "videoID": "FmJD0_jTOD4"
+    "videoID": "FmJD0_jTOD4",
+    "imageURL": "http://img.youtube.com/vi/FmJD0_jTOD4/0.jpg"
   },
   {
     "id": 6,
-    "videoID": "zMJL3MMieMw"
+    "videoID": "zMJL3MMieMw",
+    "imageURL": "http://img.youtube.com/vi/zMJL3MMieMw/0.jpg"
   },
   {
     "id": 7,
-    "videoID": "-nnWBhKZeg0"
+    "videoID": "-nnWBhKZeg0",
+    "imageURL": "http://img.youtube.com/vi/-nnWBhKZeg0/0.jpg"
   }
 ]

@@ -6,6 +6,7 @@
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+  getVideoData();
   clickLoad();
 });   
   
@@ -13,7 +14,7 @@
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var player;
-var idVideo = 'rzTqE0tzpL4';
+var idVideo = '';
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -68,5 +69,21 @@ function loadVideoData(){
         loadVideo(idVideo);
       }
     });
+  });
+}
+
+function getVideoData(){
+  var listCount = $('.sub-menu').length;
+
+  $.getJSON('data.json', function(jd) {
+    console.log("success");
+    idVideo = jd[0].videoID;
+    console.log('Get Data Sucessful');
+
+    for(var i = 1; i <= listCount; i++){ 
+      $('.sub-menu:nth-child(' + i  + ') .sub--menu-item > img').attr('src', jd[i-1].imageURL);
+      console.log('Get Image url ' + i + ': ' + jd[i-1].imageURL);
+      // alert("Get Image url " + i + ' ' + 'http://img.youtube.com/vi/' + jd[i].videoID + '/0.jpg');
+    }
   });
 }
