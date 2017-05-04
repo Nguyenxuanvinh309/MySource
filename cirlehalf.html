@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	​<style type="text/css">
+		.circle-main {
+			position: relative;
+			display: inline-block;
+		}
+
+		#circle {
+			width: 100px;
+			height: 50px;
+			background: red;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50px 50px 0 0;
+		}
+
+		#circle1 {
+			position: absolute;
+			top: 0;
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50px;
+			z-index: -1;
+		}
+	</style>
+	<div class="circle-main">
+		<div id="circle"></div>
+		<div id="circle1"></div>
+	</div>
+</body>
+</html>
+​
+
