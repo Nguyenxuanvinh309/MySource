@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div class="trapezoid-area">
+		<div class="trapezoid">
+			<a href="#">CLick Here</a>
+		</div>
+		<div class="trapezoid-shadow"></div>
+	</div>
+	<style type="text/css">
+	.trapezoid-area{
+		width: 250px;
+		position: relative;
+	}
+	.trapezoid-shadow{
+		position: absolute;
+		width: 210px;
+		height: 44px;
+		box-shadow: 0 4px 5px #888888;
+		top: 5px;
+		left: 20px;
+	}
+	.trapezoid a{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.trapezoid {
+		display: block;
+		z-index: 1;
+		position: relative;
+		/* custom sizes */
+		width: 180px;
+		height: 44px;
+		/* demo-only decoration */
+		margin: 100px auto;
+		font: 16px/50px Arial, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: orange;
+		display: table;
+	}
+	.trapezoid:before, .trapezoid:after {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		z-index: -1;
+		/* demo-only decoration */
+		background-color: orange;
+	}
+	.trapezoid:before {
+		transform: skew(-20deg);
+		left: 25px;
+		border-radius: 0 0 5px 0;
+	}
+	.trapezoid:after {
+		transform: skew(20deg);
+		right: 25px;
+		left: auto;
+		border-radius: 0 0 0 5px;
+	}
+</style>
+</body>
+</html>
