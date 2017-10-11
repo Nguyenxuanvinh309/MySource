@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div class="main-box"></div>
+	<div class="mini-box"><span>1</span></div>
+	<div class="mini-box"><span>2</span></div>
+	<div class="mini-box"><span>3</span></div>
+	<div class="mini-box"><span>4</span></div>
+	<style type="text/css">
+		.main-box{
+			background: red; 
+			width: 80%; 
+			height: 200px; 
+			margin: auto; 
+			margin-top: 60px;
+			display: none;
+		}
+		.mini-box{
+			background: red; 
+			width: 24%; 
+			height: 200px; 
+			margin: auto; 
+			margin-top: 60px;
+			float: left;
+			margin-left: 5px;
+			text-align: center;
+			color: #fff;
+			position: relative;
+		}
+		.mini-box > span{
+			font-size: 70px;
+    		display: block;
+    		position: absolute;
+    		width: 100%;
+    		top: 33%;
+		}
+		.mini-box:last-child{
+			margin-left: 0;	
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var y_begin = 0;
+			var y_end = 0;
+			var x_begin = 0;
+			var x_end = 0;
+			$('.mini-box').mouseover(function(){
+				$('.main-box').css('display','block');
+				$('.mini-box').css('display','none');
+				console.log('In area');
+
+				y_begin = $('.main-box').offset().top;
+				y_end = y_begin + $('.main-box').height();
+				x_begin = $('.main-box').offset().left;
+				x_end = x_begin + $('.main-box').width();
+			});
+
+			$(document).mousemove(function(event){
+        		// console.log('X_mouse: ' + event.pageX + ' - Y_mouse' + event.pageY);
+        		if(event.pageY < y_begin || event.pageY > y_end){
+        			console.log('Out area');
+        			$('.main-box').css('display','none');
+        			$('.mini-box').css('display','block');
+        		}
+        		if(event.pageX < x_begin || event.pageX > x_end){
+        			console.log('Out area');
+        			$('.main-box').css('display','none');
+        			$('.mini-box').css('display','block');
+        		}
+    		});
+		});
+	</script>
+</body>
+</html>
