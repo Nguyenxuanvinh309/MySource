@@ -412,6 +412,7 @@ template {
 /*TRANSITIONS*/
 /*COLOR*/
 /*LINE HEGIHT*/
+/*BORDER LINE*/
 .banner-area {
   background: url("../img/banner-area.jpg");
   width: 100%;
@@ -445,8 +446,7 @@ template {
   text-align: center; }
   .banner-title span::after {
     content: '-';
-    position: relative;
-    right: -15px; }
+    position: relative; }
     @media (max-width: 384px) {
       .banner-title span::after {
         right: 0; } }
@@ -465,6 +465,7 @@ template {
 /*TRANSITIONS*/
 /*COLOR*/
 /*LINE HEGIHT*/
+/*BORDER LINE*/
 .description-area {
   background-color: #B4BF35;
   display: table-cell;
@@ -510,9 +511,65 @@ template {
 /*TRANSITIONS*/
 /*COLOR*/
 /*LINE HEGIHT*/
+/*BORDER LINE*/
 .result-col-reset {
   padding-left: 0;
   padding-right: 0; }
+
+.result-arae-left {
+  margin-top: 30px; }
+  .result-arae-left .result-search-inputgroup {
+    position: relative;
+    margin-bottom: 15px; }
+    .result-arae-left .result-search-inputgroup .result-search-input {
+      width: 100%;
+      padding: 16px;
+      padding-left: 94px;
+      border: 2px solid #434343;
+      color: #3e3e0e;
+      font-size: 16px; }
+      .result-arae-left .result-search-inputgroup .result-search-input:focus {
+        border-color: #B4BF35;
+        outline: none; }
+    .result-arae-left .result-search-inputgroup .result-icon-input {
+      position: absolute;
+      font-size: 25px;
+      top: 15px;
+      left: 12px;
+      margin-bottom: 0; }
+  .result-arae-left .result-par-page {
+    width: 100%;
+    display: table;
+    margin-bottom: 65px; }
+    .result-arae-left .result-par-page .result-par-pagetitle {
+      display: table-cell;
+      height: 46px;
+      vertical-align: middle;
+      font-size: 16px;
+      color: #B4BF35; }
+    .result-arae-left .result-par-page .result-par-pagegroup {
+      float: right; }
+      .result-arae-left .result-par-page .result-par-pagegroup ul {
+        margin-bottom: 0; }
+        .result-arae-left .result-par-page .result-par-pagegroup ul li {
+          display: inline-block;
+          background: #B4BF35;
+          text-align: center;
+          padding: 12px 17px;
+          word-wrap: break-word; }
+          .result-arae-left .result-par-page .result-par-pagegroup ul li a {
+            font-weight: 600;
+            font-size: 16px;
+            min-width: 16px;
+            display: block;
+            color: #fff;
+            text-decoration: none; }
+          .result-arae-left .result-par-page .result-par-pagegroup ul li.active {
+            background: transparent;
+            border: 2px solid #B4BF35;
+            padding: 10px 17px; }
+            .result-arae-left .result-par-page .result-par-pagegroup ul li.active a {
+              color: #B4BF35; }
 
 /*Component*/
 /*Responsive*/

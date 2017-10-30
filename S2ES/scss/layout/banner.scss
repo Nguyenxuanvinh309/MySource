@@ -40,7 +40,6 @@
     	&::after{
     		content: '-';
     		position: relative;
-    		right: -$spacing-normal;
     		@media(max-width: 384px){
     			right: $spacing-reset;
     		}
