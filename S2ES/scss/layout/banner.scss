@@ -1,0 +1,57 @@
+@import '../helpers/variables.scss';
+
+.banner-area{
+	background: url('../img/banner-area.jpg');
+	width: $max-width;
+	height: $height-banner;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table;
+}
+
+.banner-col-reset{
+	padding-left: $spacing-reset;
+	padding-right: $spacing-reset;
+}
+
+.banner-title{
+	color: $green-color;
+    -webkit-transition: color $small-time ease-in-out;
+    -moz-transition: color $small-time ease-in-out;
+    -ms-transition: color $small-time ease-in-out;
+    -o-transition: color $small-time ease-in-out;
+    transition: color $small-time ease-in-out;
+
+    font-size: $font-size-big;
+    margin-bottom: $spacing-middle;
+    text-transform: uppercase;
+
+
+    font-weight: $font-weight-small*3;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: $spacing-reset;
+    height: $height-banner;
+    display: table-cell;
+    vertical-align: middle;
+    width: $max-width;
+    text-align: center;
+    & span{
+    	&::after{
+    		content: '-';
+    		position: relative;
+    		right: -$spacing-normal;
+    		@media(max-width: 384px){
+    			right: $spacing-reset;
+    		}
+    	}
+    	&::before{
+    		content: '-';
+    		position: relative;
+    		@media(max-width: 384px){
+    			left: $spacing-reset;
+    		}
+    	}
+    }
+}
+	

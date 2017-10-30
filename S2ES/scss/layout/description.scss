@@ -1,0 +1,42 @@
+@import '../helpers/variables.scss';
+
+.description-area{
+	background-color: $green-color;
+	display: table-cell;
+    height: $height-description;
+    vertical-align: middle;
+}
+
+.banner-col-reset{
+	display: table;
+	padding-left: $spacing-reset;
+	padding-right: $spacing-reset;
+}
+
+.description-title{
+	font-weight: $font-weight-small*4;
+    font-stretch: normal;
+    font-size: $font-size-big/2;
+    line-height: ($line-height-normal*3) + 5;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: $spacing-reset;
+    margin: auto;
+    margin-bottom: $spacing-normal + 5;
+    margin-top: $spacing-reset;
+    color: $white-color;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: $max-width-description;
+}
+
+.description-content{
+    font-weight: $font-weight-small*3;
+    font-stretch: normal;
+    font-size: $font-size-normal;
+    line-height: $line-height-normal*2;
+    letter-spacing: $spacing-reset;
+    margin: auto;
+    color: $greenblack-color;
+    text-align: center;
+    max-width: $max-width-description;
+}
