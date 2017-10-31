@@ -1,0 +1,41 @@
+@import '../helpers/variables.scss';
+@import '../helpers/mixins.scss';
+
+.result-select{
+	margin-bottom: 22px;
+
+	& .dropdown-toggle{
+		padding: 10px;
+	    width: 100%;
+	    text-align: left;
+	    background: transparent;
+	    border: 2px solid #434343;
+	    border-radius: 0;
+	}
+
+	& .dropdown-menu{
+		width: 100%;
+		position: initial;
+	    top: 0;
+	    left: 0;
+	    margin-bottom: 35px;
+	    border-radius: 0;
+	    margin-top: 0;
+	    float: none;
+
+	    & li{
+	    	padding: 3px 20px;
+	    	cursor: pointer;
+
+	    	&.active{
+	    		font-weight: bold;
+	    	}
+
+	    	&:hover{
+	    		background: #B4BF35;
+	    		color: #fff;
+	    		@include transition(0.5s);
+	    	}
+	    }
+	}
+}

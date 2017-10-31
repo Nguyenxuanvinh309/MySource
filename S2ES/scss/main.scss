@@ -1,12 +1,16 @@
 /*Base*/
 @import "base/reset.scss";
 
+/*Fonts*/
+@import "fonts/fonts.scss";
+
 /*Layout*/
 @import "layout/banner.scss";
 @import "layout/description.scss";
 @import "layout/result.scss";
 
 /*Component*/
+@import "components/dropdown.scss";
 
 /*Responsive*/
 @import "responsive/responsive.scss";

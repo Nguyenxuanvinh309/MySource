@@ -403,6 +403,13 @@ template {
 [hidden] {
   display: none; }
 
+/*Fonts*/
+@font-face {
+  font-family: 'fontawesome';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
 /*Layout*/
 /*WIDTH SIZE*/
 /*HEIGHT SIZE*/
@@ -495,7 +502,7 @@ template {
 .description-content {
   font-weight: 300;
   font-stretch: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0;
   margin: auto;
@@ -540,7 +547,7 @@ template {
   .result-arae-left .result-par-page {
     width: 100%;
     display: table;
-    margin-bottom: 65px; }
+    margin-bottom: 40px; }
     .result-arae-left .result-par-page .result-par-pagetitle {
       display: table-cell;
       height: 46px;
@@ -556,13 +563,17 @@ template {
           background: #B4BF35;
           text-align: center;
           padding: 12px 17px;
-          word-wrap: break-word; }
+          word-wrap: break-word;
+          cursor: pointer;
+          margin-left: 10px; }
+          .result-arae-left .result-par-page .result-par-pagegroup ul li:nth-child(1) {
+            margin-left: 0; }
           .result-arae-left .result-par-page .result-par-pagegroup ul li a {
             font-weight: 600;
             font-size: 16px;
             min-width: 16px;
             display: block;
-            color: #fff;
+            color: #3e3e0e;
             text-decoration: none; }
           .result-arae-left .result-par-page .result-par-pagegroup ul li.active {
             background: transparent;
@@ -570,8 +581,80 @@ template {
             padding: 10px 17px; }
             .result-arae-left .result-par-page .result-par-pagegroup ul li.active a {
               color: #B4BF35; }
+            .result-arae-left .result-par-page .result-par-pagegroup ul li.active:hover {
+              border-color: #3e3e0e; }
+          .result-arae-left .result-par-page .result-par-pagegroup ul li:hover {
+            background: #3e3e0e; }
+            .result-arae-left .result-par-page .result-par-pagegroup ul li:hover a {
+              color: #fff; }
+  .result-arae-left .result-groupselect .result-groupselect-title {
+    border-bottom: 2px solid #434343;
+    padding-bottom: 25px;
+    margin-bottom: 30px; }
+    .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-text {
+      display: table-cell;
+      height: 52px;
+      vertical-align: middle;
+      font-size: 16px;
+      color: #B4BF35;
+      padding-left: 22px; }
+    .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-symbol {
+      float: left; }
+      .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-symbol.categorie:before, .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-symbol.marque:before {
+        content: '';
+        width: 52px;
+        height: 52px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block; }
+      .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-symbol.categorie:before {
+        background: url("../img/Objet-dynamique-vectoriel.png"); }
+      .result-arae-left .result-groupselect .result-groupselect-title .result-groupselect-symbol.marque:before {
+        background: url("../img/Objet-dynamique-vectoriel-copie.png"); }
 
 /*Component*/
+/*WIDTH SIZE*/
+/*HEIGHT SIZE*/
+/*SPACING*/
+/*FONT-SIZE*/
+/*FONT-WEIGHT*/
+/*TRANSITIONS*/
+/*COLOR*/
+/*LINE HEGIHT*/
+/*BORDER LINE*/
+.result-select {
+  margin-bottom: 22px; }
+  .result-select .dropdown-toggle {
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 2px solid #434343;
+    border-radius: 0; }
+  .result-select .dropdown-menu {
+    width: 100%;
+    position: initial;
+    top: 0;
+    left: 0;
+    margin-bottom: 35px;
+    border-radius: 0;
+    margin-top: 0;
+    float: none; }
+    .result-select .dropdown-menu li {
+      padding: 3px 20px;
+      cursor: pointer; }
+      .result-select .dropdown-menu li.active {
+        font-weight: bold; }
+      .result-select .dropdown-menu li:hover {
+        background: #B4BF35;
+        color: #fff;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+
 /*Responsive*/
 
 /*# sourceMappingURL=main.css.map */

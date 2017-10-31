@@ -32,7 +32,7 @@
 .description-content{
     font-weight: $font-weight-small*3;
     font-stretch: normal;
-    font-size: $font-size-normal;
+    font-size: $font-size-normal + 2;
     line-height: $line-height-normal*2;
     letter-spacing: $spacing-reset;
     margin: auto;

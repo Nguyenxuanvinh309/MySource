@@ -38,7 +38,7 @@
 	& .result-par-page{
 		width: $max-width;
 		display: table;
-		margin-bottom: $spacing-middle + 35;
+		margin-bottom: $spacing-middle + 10;
 
 		& .result-par-pagetitle{
 			display: table-cell;
@@ -58,12 +58,19 @@
 				    text-align: center;
 				    padding: $spacing-normal - 3 $spacing-normal + 2;
 				    word-wrap: break-word;
+				    cursor: pointer;
+				    margin-left: 10px;
+
+				    &:nth-child(1){
+				    	margin-left: $spacing-reset;
+				    }
+
 					& a{
 						font-weight: $font-weight-bold;
 						font-size: $font-size-normal + 2;
 						min-width: $min-width-par-page;
     					display: block;
-    					color: $white-color;
+    					color: $greenblack-color;
     					text-decoration: none;
 					}
 
@@ -74,6 +81,60 @@
 						& a{
 							color: $green-color;
 						}
+						&:hover{
+							border-color: $greenblack-color;
+						}
+					}
+
+					&:hover{
+						background: $greenblack-color;
+
+						& a{
+							color: $white-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	& .result-groupselect{
+		& .result-groupselect-title{
+			border-bottom: 2px solid #434343;
+    		padding-bottom: 25px;
+    		margin-bottom: 30px;
+
+			& .result-groupselect-text{
+				display: table-cell;
+				height: 52px;
+				vertical-align: middle;
+				font-size: $font-size-normal + 2;
+				color: $green-color;
+				padding-left: 22px;
+			}
+			& .result-groupselect-symbol{
+				float: left;
+				&.categorie, &.marque{
+					&:before{
+						content: '';
+						width: 52px;
+						height: 52px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						background-position: center;
+						display: inline-block;
+					}
+				}
+
+				&.categorie{
+					&:before{
+						background: url('../img/Objet-dynamique-vectoriel.png');
+					}
+				}
+
+				&.marque{
+					&:before{
+						background: url('../img/Objet-dynamique-vectoriel-copie.png');
 					}
 				}
 			}
