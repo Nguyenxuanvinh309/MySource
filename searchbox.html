@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable .header {
+  display: table;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+#myTable .body .row-class {
+  display: table;
+  width: 100%;
+}
+
+#myTable .header .cell,
+#myTable .body .row-class .standard-class {
+  display: table-cell;   
+  padding: 10px; 
+}
+</style>
+</head>
+<body>
+
+<h2>My Customers</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<div id="myTable">
+  <div class="header">
+    <div style="width:60%;" class="cell">Name</div>
+    <div style="width:40%;" class="cell">Country</div>
+  </div>
+  
+  <div class="body">
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Alfreds Futterkiste</div>
+      <div style="width:40%;" class="standard-class">Germany</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Berglunds snabbkop</div>
+      <div style="width:40%;" class="standard-class">Sweden</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Island Trading</div>
+      <div style="width:40%;" class="standard-class">UK</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Koniglich Essen</div>
+      <div style="width:40%;" class="standard-class">Germany</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Laughing Bacchus Winecellars</div>
+      <div style="width:40%;" class="standard-class">Canada</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Magazzini Alimentari Riuniti</div>
+      <div style="width:40%;" class="standard-class">Italy</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">North/South</div>
+      <div style="width:40%;" class="standard-class">UK</div>
+    </div>
+    <div class="row-class">
+      <div style="width:60%;" class="standard-class">Paris specialites</div>
+      <div style="width:40%;" class="standard-class">France</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByClassName("row-class");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByClassName("standard-class")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
