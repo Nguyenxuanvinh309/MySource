@@ -40,16 +40,25 @@
   background-color: #f1f1f1;
 }
 
+#myTable .body {
+  padding: 0 10px;
+}
+
 #myTable .body .row-class {
   display: table;
   width: 100%;
+  padding: 0 10px;
 }
 
 #myTable .header .cell,
 #myTable .body .row-class .standard-class {
-  display: table-cell;   
-  padding: 10px; 
+  display: table-cell;
+  padding: 10px;
 }
+
+.col-10 {width:10%;}
+.col-50 {width:50%;}
+.col-40 {width:40%;}
 </style>
 </head>
 <body>
@@ -60,42 +69,51 @@
 
 <div id="myTable">
   <div class="header">
-    <div style="width:60%;" class="cell">Name</div>
-    <div style="width:40%;" class="cell">Country</div>
+    <div class="cell col-10">Id</div>
+    <div class="cell col-50">Name</div>
+    <div class="cell col-40">Country</div>
   </div>
-  
+
   <div class="body">
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Alfreds Futterkiste</div>
-      <div style="width:40%;" class="standard-class">Germany</div>
+      <div class="cell col-10">1</div>
+      <div class="standard-class col-50">Alfreds Futterkiste</div>
+      <div class="standard-class col-40">Germany</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Berglunds snabbkop</div>
-      <div style="width:40%;" class="standard-class">Sweden</div>
+      <div class="cell col-10">2</div>
+      <div  class="standard-class col-50">Berglunds snabbkop</div>
+      <div class="standard-class col-40">Sweden</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Island Trading</div>
-      <div style="width:40%;" class="standard-class">UK</div>
+      <div class="cell col-10">3</div>
+      <div  class="standard-class col-50">Island Trading</div>
+      <div class="standard-class col-40">UK</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Koniglich Essen</div>
-      <div style="width:40%;" class="standard-class">Germany</div>
+      <div class="cell col-10">4</div>
+      <div  class="standard-class col-50">Koniglich Essen</div>
+      <div class="standard-class col-40">Germany</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Laughing Bacchus Winecellars</div>
-      <div style="width:40%;" class="standard-class">Canada</div>
+      <div class="cell col-10">5</div>
+      <div  class="standard-class col-50">Laughing Bacchus Winecellars</div>
+      <div class="standard-class col-40">Canada</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Magazzini Alimentari Riuniti</div>
-      <div style="width:40%;" class="standard-class">Italy</div>
+      <div class="cell col-10">6</div>
+      <div  class="standard-class col-50">Magazzini Alimentari Riuniti</div>
+      <div class="standard-class col-40">Italy</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">North/South</div>
-      <div style="width:40%;" class="standard-class">UK</div>
+      <div class="cell col-10">7</div>
+      <div  class="standard-class col-50">North/South</div>
+      <div class="standard-class col-40">UK</div>
     </div>
     <div class="row-class">
-      <div style="width:60%;" class="standard-class">Paris specialites</div>
-      <div style="width:40%;" class="standard-class">France</div>
+      <div class="cell col-10">8</div>
+      <div  class="standard-class col-50">Paris specialites</div>
+      <div class="standard-class col-40">France</div>
     </div>
   </div>
 </div>
@@ -116,7 +134,7 @@ function myFunction() {
       } else {
         tr[i].style.display = "none";
       }
-    }       
+    }
   }
 }
 </script>
